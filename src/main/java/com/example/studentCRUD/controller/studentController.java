@@ -39,7 +39,7 @@ public class studentController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveStudent(@ModelAttribute("student") student std) {
         service.save(std);
-        return "redirect:/";
+        return "/";
     }
  
     @RequestMapping("/edit/{id}")
